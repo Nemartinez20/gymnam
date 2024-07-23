@@ -10,6 +10,7 @@
     --color__pricipalbody:#FAFBFE;
     --colo__primary:#9A00BF;
     --bacground:#f0f9ff;
+    --bacgroundredes:#eef5f9;
     --bacground2:#fdf2f8;
     --text__title:40px;
     --text__title__card:24px;
@@ -90,6 +91,7 @@ li a:hover{
 }
 .btn__cotizar:hover{
     background-color: var(--colorbtn);
+    color: white;
 }
 .imglogo{
     width: 170px;
@@ -203,7 +205,7 @@ li a:hover{
 
 .box__card__primary{
     width: 300px;
-    height: 390px;
+    height: 420px;
     padding: 30px;
     border: 1px solid #e6e6e6;
     border-radius: 5px;
@@ -275,7 +277,91 @@ li a:hover{
 .image__about img{
     width: 250px;
 }
+.img__flecha{
+    
+    width: 40px;
+    height: 40px;
+    fill: var(--colorbtn);
+}
 
+
+/**************************************************************************
+                     footer
+******************************************************************************/
+
+.footer__container{
+    padding: 50px 0;
+}
+.containerf{
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 0 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.contenido{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+.contenido1{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    text-align: center;
+}
+/* .contenido1 span{
+    color: var(--color__text__tercero);
+} */
+.redes{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.redescontainer{
+    display: flex;
+    gap: 20px;
+}
+
+.redes a img{
+    width: 40px;
+    transition: all 300ms;
+}
+.redes a img:hover{
+    box-shadow: var(--box__shadow__primary);
+    background-color: var(--bacgroundredes);
+    border-radius: 8px;
+}
+.copy{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.contenido1 span a{
+    color: var(--color__text__tercero);
+}
+.contenido1 span a:hover{
+    /* color: #000000; */
+    color:var(--color__links)
+}
+.copyright{
+    text-align: center;
+}
+.copyright a{
+    color: var(--color__text__tercero);
+}
+
+.copyright a:hover{
+    /* color: #000000; */
+    color:var(--color__links)
+}
 @media(max-width: 480px){
 
     .container__header{
@@ -336,6 +422,13 @@ li a:hover{
     }
     .image__about img{
         width: 150px;
+    }
+    .containerf{
+        
+        padding: 0 10px;
+        
+        flex-direction: column;
+     
     }
 }
 
